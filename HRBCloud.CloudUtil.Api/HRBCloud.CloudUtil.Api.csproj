@@ -1,0 +1,32 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|AnyCPU'">
+    <DocumentationFile>C:\MydeskTop\Development\LAB\c#\Web\HRBCloudUtil.Api\HRBCloud.CloudUtil.Api\HRBCloud.CloudUtil.Api\HRBCloud.CloudUtil.Api.xml</DocumentationFile>
+    <NoWarn>1701;1702;1591</NoWarn>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="AutoMapper.Extensions.Microsoft.DependencyInjection" Version="8.1.1" />
+    <PackageReference Include="Microsoft.AspNetCore.Authentication.JwtBearer" Version="3.1.14" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore" Version="3.1.14" />
+    <PackageReference Include="Microsoft.Graph" Version="3.29.0" />
+    <PackageReference Include="Microsoft.Graph.Auth" Version="1.0.0-preview.6" />
+    <PackageReference Include="Swashbuckle.AspNetCore.Swagger" Version="6.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerGen" Version="6.1.1" />
+    <PackageReference Include="Swashbuckle.AspNetCore.SwaggerUI" Version="6.1.1" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\..\HRBCloud.CloudUtil.AzureCloud\HRBCloud.CloudUtil.AzureCloud.csproj" />
+    <ProjectReference Include="..\..\HRBCloud.CloudUtil.Data\HRBCloud.CloudUtil.Data.csproj" />
+    <ProjectReference Include="..\..\HRBCloud.CloudUtil.Entity\HRBCloud.CloudUtil.Entity.csproj" />
+    <ProjectReference Include="..\..\HRBCloud.CloudUtil.Helpers\HRBCloud.CloudUtil.Helpers.csproj" />
+    <ProjectReference Include="..\..\HRBCloud.CloudUtil.Utility\HRBCloud.CloudUtil.Utility.csproj" />
+  </ItemGroup>
+
+
+</Project>
